@@ -1,1 +1,1 @@
-# coveragejson-cookbook
+# CoverageJSON Cookbook
