@@ -3,8 +3,7 @@
 {%- endmacro %}
 
 {% macro exampleCode(filename) -%}
-{% set p = 'examples/' ~ filename %}
 ```js
-{% include p %}
+{% include 'examples/' ~ filename %}
 ```
 {%- endmacro %}
