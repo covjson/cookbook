@@ -2,4 +2,4 @@
 
 # Domain
 
-{{ playgroundLink('grid.covjson') }}
+{{ playgroundLink('domains/grid.covjson') }}

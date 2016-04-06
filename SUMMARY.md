@@ -1,5 +1,21 @@
 # Summary
 
 * [Introduction](README.md)
-* [Domain](domain.md)
-
+* [What is a Coverage?](what-is-a-coverage.md)
+* [My First Coverage: Temperature Map](first-coverage.md)
+  * [Step 1: Spatial Domain](first-domain.md)
+  * [Step 2: Temperature Parameter](first-parameter.md)
+  * [Step 3: Range Values](first-range.md)
+  * [Putting it Together](first-result.md)
+* [Domains](domains.md)
+  * [Axis Value Types](axis-value-types.md)
+  * [Reference Systems](reference-systems.md)
+* [Parameters](parameters.md)
+  * [Units of Measurement](parameter-units.md)
+  * [Categorical Parameters](parameter-categories.md)
+  * [Parameter Groups](parameter-groups.md)
+* [Ranges](ranges.md)
+  * [Encoding Advice](range-encoding-advice.md)
+  * [Floating-Point Numbers](range-float-numbers.md)
+* [Collections](collection.md)
+* [Extensions](extensions.md)
