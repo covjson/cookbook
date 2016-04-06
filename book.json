@@ -1,6 +1,4 @@
 {
   "variables": {
-    "playgroundBaseUrl": "http://reading-escience-centre.github.io/leaflet-coverage-demo/#",
-    "exampleBaseUrl": "https://raw.githubusercontent.com/reading-escience-centre/coveragejson-cookbook/master/examples/"
   }
 }

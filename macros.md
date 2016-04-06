@@ -1,3 +1,3 @@
 {% macro playgroundLink(filename, title='Go to playground') -%}
-  [{{ title }}]({{ book.playgroundBaseUrl }}{{ book.exampleBaseUrl }}{{ filename }})
+  [{{ title }}](http://reading-escience-centre.github.io/covjson-playground/#https://raw.githubusercontent.com/reading-escience-centre/coveragejson-cookbook/master/examples/{{ filename }})
 {%- endmacro %}

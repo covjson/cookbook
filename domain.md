@@ -3,5 +3,3 @@
 # Domain
 
 {{ playgroundLink('grid.covjson') }}
-
-{{ book.playgroundBaseUrl }}
