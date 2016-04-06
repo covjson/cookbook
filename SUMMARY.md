@@ -6,7 +6,7 @@
   * [Step 1: Spatial Domain](first-domain.md)
   * [Step 2: Temperature Parameter](first-parameter.md)
   * [Step 3: Range Values](first-range.md)
-  * [Putting it Together](first-result.md)
+  * [Step 4: Putting it Together](first-result.md)
 * [Domains](domains.md)
   * [Axis Value Types](axis-value-types.md)
   * [Reference Systems](reference-systems.md)
