@@ -13,7 +13,7 @@ In general, a coverage is anything where data values, either measured or compute
 
 It is very often the case though that the continuous dimensions of a coverage are organized into chunks, like pixels of a satellite image. These chunks exist merely so that one can efficiently store, retrieve, and process the data. The size of the chunks and by which method they are derived depends on how the coverage data will be used, that is, which requirements a given end user or application has. Bigger chunks lead to smaller data volume but less level of detail, and the other way around for smaller chunks. It is often the case that coverages are made available in multiple chunk sizes to serve as big an audience as possible.
 
-![Zoomed satellite image showing pixels](images/london_etm_2002256_742_cropped_pixels.jpg)
+![Zoomed satellite image showing pixels](images/london_etm_2002256_742_cropped_pixel.png)
 
 ## Support in CoverageJSON
 
