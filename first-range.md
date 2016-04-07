@@ -1,9 +1,15 @@
 # Step 3: Range Values
 
+![Data Values overlaid on Grid](images/playground_temperature_coverage_with_values.png)
+
+...
+
 ```js
 {
-  "type" : "Range",
+  "type" : "NdArray",
   "dataType": "float",
+  "axisNames": ["y", "x"],
+  "shape": [4, 4],
   "values" : [
     17.3, 18.2, 16.5, 18.7,
     18.1, 19.4, 17.2, 18.6,
