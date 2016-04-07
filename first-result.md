@@ -23,7 +23,7 @@
     }]
   },
   "parameters" : {
-    "TEMP": {
+    "temperature": {
       "type" : "Parameter",
       "unit" : {
         "symbol" : "°C"
@@ -36,7 +36,7 @@
     }
   },
   "ranges" : {
-    "TEMP" : {
+    "temperature" : {
       "type" : "Range",
       "dataType": "float",
       "values" : [
