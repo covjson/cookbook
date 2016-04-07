@@ -2,6 +2,11 @@
 
 # Step 1: Spatial Domain
 
+![Coordinates of cell centers](images/playground_temperature_coverage_with_points_coordinates.png)
+
+
+
+
 ```js
 {
   "type" : "Domain",
