@@ -13,7 +13,7 @@ Typically, chunks in that context are called grid cells.
 
 2. Next, we need to know the type of coordinates with which the grid cells are described.
 In this case, it is longitude and latitude in degrees.
-The global identifier for this coordinate reference system is http://www.opengis.net/def/crs/OGC/1.3/CRS84.
+The global identifier for this coordinate reference system (CRS) is http://www.opengis.net/def/crs/OGC/1.3/CRS84.
 The axis order in that system is longitude-latitude.
 
 3. The grid should consist of same-size cells, which makes it a so-called regular grid.
@@ -48,6 +48,6 @@ This structure is called a *Domain*, in this case it is more specifically called
 
 Some things that we should understand:
 - The start/stop/num properties can only be used for regular numeric axes. For other cases, there is a different property called `"values"` which lists each coordinate individually.
-- The coordinates in an axis have an ordering. Above, the longitude axis "x" is ascending from 7 to 14, while the latitude axis is descending from 54 to 48. This ordering is not relevant at this stage but gets important again when we associate temperature values to the coordinates. It determines how the data values have to be ordered.
-- The `"components"` property associates our axes to the axes of a coordinate reference system and matches them up in the same order, meaning that `"x"` is understood as longitude, and `"y"` as latitude, since this is how that particular system is defined.
+- The coordinates in an axis have an ordering. Above, the longitude axis "x" is ascending from 7 to 14, while the latitude axis is descending from 54 to 48. This ordering is not relevant at this stage but gets important again when we associate temperature values to the coordinates. It determines how the data values have to be stored.
+- The `"components"` property associates our axes to the axes of a CRS and matches them up in the same order, meaning that `"x"` is understood as longitude, and `"y"` as latitude, since this is how that particular CRS is defined.
 - `"profile": "Grid"` is optional but highly recommended. There are several pre-defined profiles which enforce a certain naming of axes and other details, making it easier for clients to specialize for certain domain types without having to be programmed in a fully generic way. 
