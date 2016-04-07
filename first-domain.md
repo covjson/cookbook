@@ -4,6 +4,9 @@
 
 ![Coordinates of cell centers](images/playground_temperature_coverage_with_points_coordinates.png)
 
+In the following we will establish where our data values will be located.
+For that we have to consider several things:
+
 1. We will first think about the general structure of the chunks we have.
 As we can see in the image above the chunks are organized into a grid structure.
 Typically, chunks in that context are called grid cells.
