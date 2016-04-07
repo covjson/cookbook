@@ -1,0 +1,6 @@
+london_etm_2002256_742.jpg
+  - resized from http://eoimages.gsfc.nasa.gov/images/imagerecords/78000/78669/london_etm_2002256_742_lrg.jpg
+  - http://landsat.visibleearth.nasa.gov/view.php?id=78669
+  
+london_etm_2002256_742_cropped_pixel.jpg
+  - cropped/pixelated from london_etm_2002256_742.jpg
