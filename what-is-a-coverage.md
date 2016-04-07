@@ -1,6 +1,6 @@
 # What is a Coverage?
 
-![Landsat 7 - ETM+ false color satellite image of London on September 13, 2002](images/london_etm_2002256_742.jpg)
+[![Landsat 7 - ETM+ false color satellite image of London on September 13, 2002](images/london_etm_2002256_742.jpg)](http://landsat.visibleearth.nasa.gov/view.php?id=78669)
 
 A coverage can be many things:
 - Satellite image
