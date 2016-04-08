@@ -3,7 +3,7 @@
 ![Temperature values overlaid on grid](images/playground_temperature_coverage_with_values.png)
 
 We know the temperature of each grid cell from the image above.
-In CoverageJSON data values are associated to domain objects (here grid cells) with the help of a multi-dimensional array that is encoded as a flat one-dimensional array, here called NdArray. Let's have a look at the code first:
+In CoverageJSON data values are associated to domain objects (here grid cells) with the help of a multi-dimensional array that is encoded as a flat one-dimensional array, here called NdArray. In general Coverage terminology, the set of values of a parameter are also called the Range. NdArray is one particular encoding scheme for Range values. Let's have a look at the code first:
 ```js
 {
   "type" : "NdArray",
@@ -18,7 +18,8 @@ In CoverageJSON data values are associated to domain objects (here grid cells) w
   ]
 }
 ```
-We can see that the values appear in the same layout as in the image above. There are two reasons for that:
+We can see that the values (by the way, missing values would become `null`) appear in the same layout as in the image above.
+There are two reasons for that:
 
 1. NdArrays always use [row-major order](https://en.wikipedia.org/wiki/Row-major_order).
 The first array axis is `y` (latitude) and the second axis `x` (longitude), as given in `axisNames`.

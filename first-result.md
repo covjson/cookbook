@@ -2,6 +2,9 @@
 
 # Step 4: Putting it Together
 
+![Visualization of finished Coverage](images/playground_temperature_coverage.png)
+
+Assembling the individual parts to a CoverageJSON Coverage is very straight-forward:
 ```js
 {
   "type" : "Coverage",
@@ -62,5 +65,11 @@
   }
 }
 ```
-
 {{ playgroundLink('coverages/grid.covjson') }}
+
+This is what happened:
+
+- Since a Coverage can contain multiple parameters, we had to invent a short unique name for our single air temperature parameter, here `temperature`.
+- The `profile` property of the Coverage object has the value `GridCoverage`. This built-in profile enforces that the domain must have a `Grid` profile, and that each NdArray object must use a defined axis order of y-x. The `Grid` profile also supports an optional vertical and time axis with names `z` and `t`, respectively. If all axes were used, then the NdArray axis order would be prescribed as t-z-y-x.
+
+And we're done! There is a lot more to explore, however, for the time being just head over to the playground and try to experiment by changing the values or the grid a bit and see what happens.
