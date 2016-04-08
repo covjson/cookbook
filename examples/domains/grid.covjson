@@ -5,7 +5,6 @@
     "x" : { "start": 7, "stop": 14, "num": 4 },
     "y" : { "start": 54, "stop": 48, "num": 4 }
   },
-  "rangeAxisOrder": ["y","x"],
   "referencing": [{
     "components": ["x","y"],
     "system": {

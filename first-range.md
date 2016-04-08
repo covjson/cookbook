@@ -27,7 +27,7 @@ This means that you start with `y=0` and iterate through `x=0..3`, then `y=1` an
 2. The connection between NdArray axis indices and Domain axis coordinates is determined by the ordering of the Domain axis.
 There is a difference between an axis going from 54° to 48° and one going from 48° to 54°.
 
-If we had switched the NdArray axis order around, then our array would look like that:
+If we had switched the NdArray axis order around from y-x to x-y, then our array would look like that:
 ```js
 {
   "type" : "NdArray",
