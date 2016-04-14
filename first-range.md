@@ -45,7 +45,4 @@ If we had switched the NdArray axis order around from y-x to x-y, then our array
 ```
 Columns become rows, and rows become columns.
 
-In general, clients will access values through an abstraction layer where axis names can be used, ignoring any underlying ordering or encoding of the array. For example, `value = ndarr.get({x:0, y:2})`. The indices then directly correspond to the domain axis coordinates at those indices, for example `longitude = domain.x.get(0)` and `latitude = domain.y.get(2)`.
-
-However, to get started easily in an implementation that tries to read such arrays there is an advantage if the axis order is known and fixed.
-For that reason, CoverageJSON defines several built-in profiles that guarantee a given ordering and make implementations that target those profiles easier to develop. More on that on the next page!
+Head over to the next page, we're nearly done! 
