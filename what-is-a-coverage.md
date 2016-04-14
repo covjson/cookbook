@@ -1,6 +1,7 @@
 # What is a Coverage?
 
 [![Landsat 7 - ETM+ false color satellite image of London on September 13, 2002](images/london_etm_2002256_742.jpg)](http://landsat.visibleearth.nasa.gov/view.php?id=78669)
+*Landsat 7 - ETM+ false color satellite image of London on September 13*
 
 A coverage can be many things:
 - Satellite image
@@ -13,7 +14,8 @@ In general, a coverage is anything where data values, either measured or compute
 
 It is very often the case though that the continuous dimensions of a coverage are organized into chunks, like pixels of a satellite image. These chunks exist merely so that one can efficiently store, retrieve, and process the data. The size of the chunks and by which method they are derived depends on how the coverage data will be used, that is, which requirements a given end user or application has. Bigger chunks generally imply a smaller data volume but with a lower level of detail, and vice versa where smaller chunks have a corresponding larger data volume and higher level of detail. It is often the case that coverages are made available in multiple chunk sizes to serve as big an audience as possible. Depending on the context and abstraction level, chunks are also called pixels, cells, slices, or domain objects.
 
-![Zoomed satellite image showing pixels](images/london_etm_2002256_742_cropped_pixel.png)
+![Zoomed Landsat 7 satellite image showing pixels](images/london_etm_2002256_742_cropped_pixel.png)
+*Zoomed Landsat 7 satellite image showing pixels*
 
 ## Support in CoverageJSON
 
