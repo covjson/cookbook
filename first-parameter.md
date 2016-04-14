@@ -9,7 +9,8 @@ Describing what our data values represent is fairly simple in CoverageJSON and i
   },
   "observedProperty" : {
     "label" : {
-      "en": "Air temperature"
+      "en": "Air temperature",
+      "de": "Lufttemperatur"
     }
   }
 }
@@ -18,7 +19,8 @@ There are two pieces of information in here:
 - `unit.symbol` is an informal textual notation of the units of measurement, here degrees Celsius.
 - `observedProperty` describes the abstract concept that is measured or modelled, independent of what units are used.
 
-If data values have no units, then `unit` would be omitted. `observedProperty.label` however is always required.
+If data values have no units, then `unit` would be omitted.
+`observedProperty.label` however is always required and is a mapping from [language tags](http://tools.ietf.org/html/bcp47) to strings.  
 
 While the above is enough for humans to get a basic understanding, CoverageJSON allows us to describe a parameter in more detail, partially to make it easier for machines to identify related datasets and also to compare them with each other:
 ```js
@@ -39,7 +41,8 @@ While the above is enough for humans to get a basic understanding, CoverageJSON 
   "observedProperty" : {
     "id": "http://vocab.nerc.ac.uk/standard_name/air_temperature/",
     "label" : {
-      "en": "Air temperature"
+      "en": "Air temperature",
+      "de": "Lufttemperatur"
     },
     "description": {
       "en": "Air temperature is the bulk temperature of the air, not the surface (skin) temperature."

@@ -42,7 +42,8 @@ Assembling the individual parts to a CoverageJSON Coverage is very straight-forw
       "observedProperty" : {
         "id": "http://vocab.nerc.ac.uk/standard_name/air_temperature/",
         "label" : {
-          "en": "Air temperature"
+          "en": "Air temperature",
+          "de": "Lufttemperatur"
         },
         "description": {
           "en": "Air temperature is the bulk temperature of the air, not the surface (skin) temperature."
