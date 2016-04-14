@@ -14,13 +14,13 @@ Describing what our data values represent is fairly simple in CoverageJSON and i
   }
 }
 ```
-There are two information in here:
+There are two pieces of information in here:
 - `unit.symbol` is an informal textual notation of the units of measurement, here degrees Celsius.
 - `observedProperty` describes the abstract concept that is measured or modelled, independent of what units are used.
 
 If data values have no units, then `unit` would be omitted. `observedProperty.label` however is always required.
 
-While the above is enough for humans to get a basic understanding, CoverageJSON allows to describe a parameter in more detail, partially to make it easier for machines to identify related datasets and also to compare them with each other:
+While the above is enough for humans to get a basic understanding, CoverageJSON allows us to describe a parameter in more detail, partially to make it easier for machines to identify related datasets and also to compare them with each other:
 ```js
 {
   "type" : "Parameter",
