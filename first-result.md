@@ -8,10 +8,9 @@ Assembling the individual parts to a CoverageJSON Coverage is very straight-forw
 ```js
 {
   "type" : "Coverage",
-  "profile" : "GridCoverage",
   "domain" : {
     "type" : "Domain",
-    "profile" : "Grid",
+    "domainType" : "Grid",
     "axes": {
       "x" : { "start": 7, "stop": 14, "num": 4 },
       "y" : { "start": 54, "stop": 48, "num": 4 }
@@ -71,6 +70,5 @@ Assembling the individual parts to a CoverageJSON Coverage is very straight-forw
 This is what happened:
 
 - Since a Coverage can contain multiple parameters, we had to invent a short unique name for our single air temperature parameter, here `temperature`.
-- The `profile` property of the Coverage object has the value `GridCoverage`. This built-in profile enforces that the domain must have a `Grid` profile. The `Grid` profile also supports an optional vertical and time axis with names `z` and `t`, respectively.
 
 And we're done! There is a lot more to explore, however, for the time being just head over to the playground and try to experiment a bit by changing the values and see what happens.
