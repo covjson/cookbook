@@ -97,3 +97,5 @@ Notes:
 - The "Missing value" category is not strictly necessary in CovJSON as this is also represented by `null` in range values.
   If however there would be specific distinguished reasons for a missing value (e.g. instrument failure, data corruption) then
   such categories are indeed useful.
+- Since there are official URIs for all the Argo quality flags the above translation was straightforward.
+  If this was not the case then such URIs should be created first. Otherwise, a simple arbitrary string may be used for `"id"` as well, e.g. `"bad"` and `"good"`. The advantage of using URIs is that clients have a better chance of understanding and working with the flags. The data becomes more interoperable.
