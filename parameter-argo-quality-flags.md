@@ -91,6 +91,7 @@ The corresponding categorical parameter then looks like that:
   }
 }
 ```
+{{ playgroundLink('coverages/point-argo-quality-flags.covjson', title='Open in Playground (Point coverage)') }}
 
 Notes:
 - We added our own short labels for each category to make visualization in clients more convenient.
