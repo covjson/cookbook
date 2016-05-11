@@ -1,3 +1,5 @@
+{% from "macros.md" import playgroundLink %}
+
 # Argo Quality Flags
 
 Quality flags in CovJSON are represented with a categorical parameter. In this example we use the [Argo quality flags](http://mmisw.org/ont/argo/qualityFlag):
