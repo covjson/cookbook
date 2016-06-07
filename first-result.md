@@ -55,6 +55,7 @@ Assembling the individual parts to a CoverageJSON Coverage is very straight-forw
       "type" : "NdArray",
       "dataType": "float",
       "axisNames": ["y", "x"],
+      "shape": [4, 4],
       "values" : [
         17.3, 18.2, 16.5, 18.7,
         18.1, 19.4, 17.2, 18.6,
