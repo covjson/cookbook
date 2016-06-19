@@ -1,5 +1,5 @@
 {% macro playgroundLink(filename, title='Open in Playground') -%}
-  [{{ title }}](http://reading-escience-centre.github.io/covjson-playground/#https://raw.githubusercontent.com/reading-escience-centre/coveragejson-cookbook/master/examples/{{ filename }})
+  <a href="http://covjson.org/playground/#https://raw.githubusercontent.com/covjson/cookbook/master/examples/{{ filename }}" target="_blank">{{ title }}</a>
 {%- endmacro %}
 
 {% macro exampleCode(filename) -%}
