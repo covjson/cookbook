@@ -1,0 +1,23 @@
+{% extends template.self %}
+
+{% block javascript %}
+{{ super() }}
+    
+<script>
+function inIframe () {
+    try {
+        return window.self !== window.top
+    } catch (e) {
+        return false
+    }
+}
+if (inIframe()) {
+  var loc = window.top.location
+  var withoutHash = loc.origin + loc.pathname
+  var parts = window.location.pathname.split('/')
+  var page = parts[parts.length-1].replace('.html', '')
+  window.top.location.hash = page
+}
+</script>    
+    
+{% endblock %}

@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "description": "CoverageJSON Cookbook",
+  "contributors": [
+    "Maik Riechert <maik.riechert@arcor.de>"
+  ],
+  "bugs": "https://github.com/covjson/cookbook/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/covjson/cookbook.git"
+  },
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "gitbook-cli": "latest"
+  }
+}
