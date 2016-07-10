@@ -50,6 +50,6 @@ Some things that we should understand:
 - The `start`/`stop`/`num` properties can only be used for regular numeric axes. For other cases, there is a different property called `"values"` which lists each coordinate individually.
 - The coordinates in an axis have an ordering. Above, the longitude axis `x` is ascending from 7 to 14, while the latitude axis `y` is descending from 54 to 48. This ordering is not relevant at this stage but gets important again when we associate temperature values with coordinates. It determines how the data values have to be stored.
 - The `components` property associates our axes to the axes of a CRS and matches them up in the same order, meaning that `x` is understood as longitude, and `y` as latitude, since this is how that particular CRS is defined (longitude-latitude order).
-- `domainType` is optional but highly recommended. There are several [pre-defined domain types](https://github.com/Reading-eScience-Centre/coveragejson/blob/master/domain-types.md) which enforce a certain naming of axes and other details, making it easier for clients to specialize for certain domain types without having to be programmed in a fully generic way.
+- `domainType` is optional but highly recommended. There are several [pre-defined domain types](http://covjson.org/domain-types/) which enforce a certain naming of axes and other details, making it easier for clients to specialize for certain domain types without having to be programmed in a fully generic way.
 
 
