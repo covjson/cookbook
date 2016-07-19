@@ -24,3 +24,5 @@
   * [Floating-Point Numbers](range-float-numbers.md)
 * [Collections](collection.md)
 * [Extensions](extensions.md)
+  * [Custom Fields](custom-fields.md)
+  * [Custom Types](custom-types.md)

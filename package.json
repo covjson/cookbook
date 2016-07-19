@@ -10,7 +10,7 @@
     "url": "https://github.com/covjson/cookbook.git"
   },
   "scripts": {
-    "serve": "gitbook serve",
+    "start": "gitbook serve",
     "build": "gitbook build",
     "prepublish": "npm run build"
   },
