@@ -145,7 +145,7 @@ Instead of the compact URI `uor:UDUNITS` we could also have used an absolute URI
 
 ## Custom range type (or: Custom type in custom fields)
 
-CoverageJSON enforces a canonical JSON encoding of range data in the `"ranges"` field which generic implementations support. Alternative range encodings can be added under the `"alternateRanges"` field. Whether the canonical JSON range data (in this case typically linked from within the `"ranges"` field) is omitted or not depends on the specific use case and has to be carefully evaluated.
+CoverageJSON enforces a canonical JSON encoding of range data in the `"ranges"` field which generic implementations support. Alternative range encodings can be added under the `"rangeAlternates"` field. Whether the canonical JSON range data (in this case typically linked from within the `"ranges"` field) is omitted or not depends on the specific use case and has to be carefully evaluated.
 
 Example:
 
@@ -157,7 +157,7 @@ Example:
   "ranges" : {
     "temperature" : "http://example.com/temperature.covjson"
   },
-  "alternateRanges": {
+  "rangeAlternates": {
     "uor:dap2": {
       "temperature": {
         "type": "uor:DAP2NdArray",
