@@ -1,7 +1,7 @@
 # Extensions
 
 Although the specification tries to cover many common scenarios, there may be situations when this is not enough.
-Fortunately, CoverageJSON privides mechanisms to extend any document in a well-defined manner.
+Fortunately, CoverageJSON provides mechanisms to extend any document in a well-defined manner.
 In this section you will learn how easy it is to do just that.
 
 ## Use cases

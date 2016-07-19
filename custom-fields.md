@@ -1,6 +1,6 @@
 # Custom Fields
 
-Custom fields are typically used to add information that it is not (yet) covered by the CoverageJSON specification.
+Custom fields are typically used to add information that it is not covered by the CoverageJSON specification.
 An example would be to add fields for the publisher, license, and publication date.
 
 If you don't care much about interoperability or field name clashes with future versions of the format,
