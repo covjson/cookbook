@@ -1,1 +1,0 @@
-In general, clients will access values through an abstraction layer where axis names can be used, ignoring any underlying ordering or encoding of the array. For example, `value = ndarr.get({x:0, y:2})`. The indices then directly correspond to the domain axis coordinates at those indices, for example `longitude = domain.x.get(0)` and `latitude = domain.y.get(2)`.
