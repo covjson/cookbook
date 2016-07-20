@@ -26,7 +26,7 @@ Example:
 ```json
 {
   "type": "Domain",
-  "domainType": "uor:Transect",
+  "domainType": "ex:Transect",
   "axes": {
     "composite": {
       "dataType": "tuple",
@@ -48,7 +48,7 @@ Example:
 }
 ```
 
-Instead of the compact URI `uor:Transect` we could also have used an absolute URI, like `http://example.com/covjson-Transect`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
+Instead of the compact URI `ex:Transect` we could also have used an absolute URI, like `http://example.com/covjson-Transect`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
 
 ## Custom axis value data type
 
@@ -61,7 +61,7 @@ Example:
   "type": "Domain",
   "axes": {
     "composite": {
-      "dataType": "uor:multiPolygon",
+      "dataType": "ex:multiPolygon",
       "components": ["x","y"],
       "values": [
         [
@@ -82,8 +82,8 @@ Example:
 }
 ```
 
-Here, `uor:multiPolygon` defines that each axis value is a GeoJSON MultiPolygon (the `"coordinates"` field of it).
-Instead of the compact URI `uor:multiPolygon` we could also have used an absolute URI, like `http://example.com/covjson-multiPolygon`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
+Here, `ex:multiPolygon` defines that each axis value is a GeoJSON MultiPolygon (the `"coordinates"` field of it).
+Instead of the compact URI `ex:multiPolygon` we could also have used an absolute URI, like `http://example.com/covjson-multiPolygon`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
 
 ## Custom reference system type
 
@@ -100,18 +100,18 @@ Example:
   "referencing": [{
     "components": ["hp"],
     "system": {
-      "type": "uor:HEALPixRS",
-      "uor:h": 3,
-      "uor:k": 3,
-      "uor:ordering": "nested"
+      "type": "ex:HEALPixRS",
+      "ex:h": 3,
+      "ex:k": 3,
+      "ex:ordering": "nested"
     }
   }]
 }
 ```
 
-In the example above, `uor:HEALPixRS` refers to [HEALPix](http://healpix.jpl.nasa.gov/) which is a type of [geodesic discrete global grid system](https://en.wikipedia.org/wiki/Discrete_Global_Grid) (sometimes just called geodesic grid). Different to longitude/latitude or projected systems, grid cell indexing works in a 1D space. Also note that three additional custom fields are used to fully define the reference system.
+In the example above, `ex:HEALPixRS` refers to [HEALPix](http://healpix.jpl.nasa.gov/) which is a type of [geodesic discrete global grid system](https://en.wikipedia.org/wiki/Discrete_Global_Grid) (sometimes just called geodesic grid). Different to longitude/latitude or projected systems, grid cell indexing works in a 1D space. Also note that three additional custom fields are used to fully define the reference system.
 
-Instead of the compact URI `uor:HEALPixRS` we could also have used an absolute URI, like `http://example.com/healpix`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
+Instead of the compact URI `ex:HEALPixRS` we could also have used an absolute URI, like `http://example.com/healpix`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
 
 ## Custom unit symbol type
 
@@ -128,7 +128,7 @@ Example:
     },
     "symbol": {
       "value": "degreeC",
-      "type": "uor:UDUNITS"
+      "type": "ex:UDUNITS"
     }
   },
   "observedProperty" : {
@@ -139,9 +139,9 @@ Example:
 }
 ```
 
-Here, `uor:UDUNITS` refers to the coding scheme of the [UDUNITS](http://www.unidata.ucar.edu/software/udunits/) software package. This scheme is also the official one used by the popular [CF Conventions](http://cfconventions.org/).
+Here, `ex:UDUNITS` refers to the coding scheme of the [UDUNITS](http://www.unidata.ucar.edu/software/udunits/) software package. This scheme is also the official one used by the popular [CF Conventions](http://cfconventions.org/).
 
-Instead of the compact URI `uor:UDUNITS` we could also have used an absolute URI, like `http://example.com/udunits`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
+Instead of the compact URI `ex:UDUNITS` we could also have used an absolute URI, like `http://example.com/udunits`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier.
 
 ## Custom range type (or: Custom type in custom fields)
 
@@ -158,26 +158,26 @@ Example:
     "temperature" : "http://example.com/temperature.covjson"
   },
   "rangeAlternates": {
-    "uor:dap2": {
+    "ex:dap2": {
       "temperature": {
-        "type": "uor:DAP2NdArray",
+        "type": "ex:DAP2NdArray",
         "dataType": "float",
         "axisNames": ["y","x"],
         "shape": [180, 360],
-        "uor:offset": 40,
-        "uor:factor": 100,
-        "uor:missingValue": 999,
+        "ex:offset": 40,
+        "ex:factor": 100,
+        "ex:missingValue": 999,
         "urlTemplate": "http://my.opendap.server/data.dods?air_temp{y}{x}"
       }
     },
-    "uor:tiff": {
+    "ex:tiff": {
       "temperature": {
-        "type": "uor:TIFF2DArray",
+        "type": "ex:TIFF2DArray",
         "dataType": "float",
         "axisNames": ["y","x"],
         "shape": [180, 360],
-        "uor:channel": 0,
-        "uor:url": "http://example.com/data.tiff"
+        "ex:channel": 0,
+        "ex:url": "http://example.com/data.tiff"
       }
     }
   }
@@ -185,6 +185,6 @@ Example:
 ```
 
 In the example above, two alternative range encodings are provided, one based on a [DAP 2](http://opendap.org/documentation) endpoint, the other on TIFF images.
-The `uor:dap` and `uor:tiff` fields provide a convenient entry point to the alternative encodings. Within those custom fields, the `uor:DAP2NdArray` and `uor:TIFF2DArray` types define the actual range type, of which there may be more than one for a given entry point (similar to the built-in `NdArray` and `TiledNdArray` types).
+The `ex:dap` and `ex:tiff` fields provide a convenient entry point to the alternative encodings. Within those custom fields, the `ex:DAP2NdArray` and `ex:TIFF2DArray` types define the actual range type, of which there may be more than one for a given entry point (similar to the built-in `NdArray` and `TiledNdArray` types).
 
-Instead of the compact URIs `uor:DAP2NdArray` and `uor:TIFF2DArray` we could also have used absolute URIs, like `http://example.com/covjson-DAP2NdArray`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier. In the examples above, compact URIs make more sense though, as there are custom fields which likely would belong to the same namespace.
+Instead of the compact URIs `ex:DAP2NdArray` and `ex:TIFF2DArray` we could also have used absolute URIs, like `http://example.com/covjson-DAP2NdArray`. This can make sense if there is no namespace as such and the concept is not part of a set of concepts. Publishers should decide for one variant and then stick to it - this makes client development easier. In the examples above, compact URIs make more sense though, as there are custom fields which likely would belong to the same namespace.
