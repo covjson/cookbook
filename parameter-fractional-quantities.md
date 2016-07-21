@@ -1,6 +1,6 @@
-# Sea Ice Area Fraction
+# Fractional Quantities
 
-In this example we will see how a fraction can be represented in CovJSON. For that we use the sea ice area fraction.
+In this example we will see how a fractional quantity can be represented in CovJSON. For that we use the sea ice area fraction.
 
 Fractions in CovJSON are stored as a decimal number which is typically between 0 and 1. Percentages are fractions comparing a number to 100, which means they simply have a unit of `1/100`, which is often symbolized with the percentage sign `%`. Depending on how data values are stored, those two cases have to be distinguished.
 
