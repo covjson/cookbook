@@ -28,5 +28,5 @@ Example of adding custom fields:
 In order to establish a common understanding of extensions and to be able to easily combine them in one document, prefixes should be registered.
 Registration is not bound to any restrictions or obligations. The site <https://covjson.org/prefixes/> shows already registered prefixes and has instructions on how to add a new one (which amounts to a simple GitHub pull request).
 
-If you're into linked data and RDF, then consider having a look at the [JSON-LD section](http://covjson.org/spec/#json-ld) of the spec. 
+If you're into linked data and RDF, then consider having a look at the [JSON-LD section](https://covjson.org/spec/#json-ld) of the spec. 
 
