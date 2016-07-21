@@ -17,7 +17,7 @@ Example of adding custom fields:
   "type" : "Coverage",
   "dct:license": "https://creativecommons.org/licenses/by/4.0/",
   "dct:issued": "2016-03-01",
-  "dcat:contactPoint": {
+  "ex:contactPoint": {
     "foaf:mbox": "mailto:mail@example.com",
     "foaf:name": "Example Data Publication Office"
   }
