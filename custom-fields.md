@@ -11,11 +11,16 @@ In the following we focus on how to add custom fields in a future-proof and inte
 The first thing to do is to use field names of the form `"prefix:suffix"`.
 The CoverageJSON specification will never define a field name with a colon, effectively avoiding name collisions with extensions as the format evolves.
 
-Example of adding a custom field:
+Example of adding custom fields:
 ```js
 {
   "type" : "Coverage",
   "dct:license": "https://creativecommons.org/licenses/by/4.0/",
+  "dct:issued": "2016-03-01",
+  "dcat:contactPoint": {
+    "foaf:mbox": "mailto:mail@example.com",
+    "foaf:name": "Example Data Publication Office"
+  }
   ...
 }
 ```
