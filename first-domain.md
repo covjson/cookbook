@@ -7,9 +7,8 @@
 In the following, we will establish where our data values are located.
 For this we must consider several things:
 
-1. We will first think about the general structure of the chunks we have.
-As we can see in the image above the chunks are organized into a grid structure.
-Typically, chunks in that context are called grid cells.
+1. We will first think about the general structure of the data.
+As we can see in the image above the data is organized into a grid which has 16 cells.
 
 2. Next, we need to know the type of coordinates with which the grid cells are described.
 In this case, it is longitude and latitude in degrees.
