@@ -30,7 +30,7 @@ Example:
   "axes": {
     "composite": {
       "dataType": "tuple",
-      "components": ["x","y","z"],      
+      "coordinates": ["x","y","z"],      
       "values": [
         [1.112, 20.001, 0.35],
         [1.113, 20.002, 0.45],
@@ -39,7 +39,7 @@ Example:
     }
   },
   "referencing": [{
-    "components": ["y","x","z"],
+    "coordinates": ["y","x","z"],
     "system": {
       "type": "GeodeticCRS",
       "id": "http://www.opengis.net/def/crs/EPSG/0/4979"        
@@ -62,7 +62,7 @@ Example:
   "axes": {
     "composite": {
       "dataType": "ex:multiPolygon",
-      "components": ["x","y"],
+      "coordinates": ["x","y"],
       "values": [
         [
           [[[102.0, 2.0], [103.0, 2.0], [103.0, 3.0], [102.0, 3.0], [102.0, 2.0]]],
@@ -73,7 +73,7 @@ Example:
     }
   },
   "referencing": [{
-    "components": ["x","y"],
+    "coordinates": ["x","y"],
     "system": {
       "type": "GeodeticCRS",
       "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
@@ -98,7 +98,7 @@ Example:
     "hp": { "start": 0, "stop": 99, "num": 100 }
   },
   "referencing": [{
-    "components": ["hp"],
+    "coordinates": ["hp"],
     "system": {
       "type": "ex:HEALPixRS",
       "ex:h": 3,

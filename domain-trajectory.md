@@ -9,7 +9,7 @@
     "axes": {
       "composite": {
         "dataType": "tuple",
-        "components": ["t","x","y","z"],      
+        "coordinates": ["t","x","y","z"],      
         "values": [
           ["2008-01-01T04:00:00Z", 1, 20, 1],
           ["2008-01-01T04:30:00Z", 2, 21, 3]

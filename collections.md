@@ -26,13 +26,13 @@ Example:
     }
   },
   "referencing": [{
-    "components": ["x","y"],
+    "coordinates": ["x","y"],
     "system": {
       "type": "GeodeticCRS",
       "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
     }
   }, {
-    "components": ["z"],
+    "coordinates": ["z"],
     "system": {
       "type": "VerticalCRS",
       "cs": {
@@ -48,7 +48,7 @@ Example:
       }
     }
   }, {
-    "components": ["t"],
+    "coordinates": ["t"],
     "system": {
       "type": "TemporalRS",
       "calendar": "Gregorian"

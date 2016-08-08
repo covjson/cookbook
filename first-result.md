@@ -16,7 +16,7 @@ Assembling the individual parts to a CoverageJSON Coverage is very straight-forw
       "y" : { "start": 54, "stop": 48, "num": 4 }
     },
     "referencing": [{
-      "components": ["x","y"],
+      "coordinates": ["x","y"],
       "system": {
         "type": "GeodeticCRS",
         "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
