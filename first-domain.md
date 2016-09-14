@@ -35,7 +35,7 @@ Now we are ready to represent that information in CoverageJSON:
   "referencing": [{
     "coordinates": ["x","y"],
     "system": {
-      "type": "GeodeticCRS",
+      "type": "GeographicCRS",
       "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
     }
   }]

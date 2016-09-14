@@ -41,7 +41,7 @@ Example:
   "referencing": [{
     "coordinates": ["y","x","z"],
     "system": {
-      "type": "GeodeticCRS",
+      "type": "GeographicCRS",
       "id": "http://www.opengis.net/def/crs/EPSG/0/4979"        
     }
   }]
@@ -75,7 +75,7 @@ Example:
   "referencing": [{
     "coordinates": ["x","y"],
     "system": {
-      "type": "GeodeticCRS",
+      "type": "GeographicCRS",
       "id": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
     }
   }]
